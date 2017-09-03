@@ -19,7 +19,7 @@ The opcodes for 86 and 64 bit are different so we need to code two different cod
 
 5. Patch the code cave so it has the correct addresses of _pthread_set_self, the dylib_name address inside the address, dlopen, mach_thread_self, and thread_suspend.
 6. Use thread_create_running to create our remote thread. Set the base pointer, stack pointer, and destination index registers to the stack address (setting edi is for _pthread_set_self). Set the instruction pointer to our code cave.
-7. Unallocate our memory and detach our task port.
+7. Detach our task port.
 
 ### Example
 A target and an example dylib (in both 32 and 64 bit) are given for testing. 

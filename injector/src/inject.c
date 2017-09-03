@@ -62,7 +62,7 @@ mach_port_t get_task_for_pid( int pid, kern_return_t *kern_return )
 *       6. Use thread_create_running to create our remote thread. Set the base pointer, stack pointer,
 *           and destination index registers to the stack address (setting edi is for 
 *           _pthread_set_self). Set the instruction pointer to our code cave.
-*       7. Unallocate our memory and detach our task port.
+*       7. Detach our task port.
 */
 mem_return_t inject_dylib( int pid, char *dylib_name, allocated_memory_t *mem_locations, 
     kern_return_t *kern_return )
