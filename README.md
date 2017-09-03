@@ -1,4 +1,5 @@
 # dylib_injector
+![Injection screenshot](/promos/promo.gif?raw=true "Injecting into process")
 
 ### About
 dylib_injector is an injector that allows you to load dynamic libraries into other processes' memory and execute them. This allows you to do things like directly modify memory and execute remote code within the memory and permissions of the process you inject into it.

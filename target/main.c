@@ -2,7 +2,7 @@
 
 int main(int argc, char* argv[])
 {
-    printf( "testapp text\n" );
+    printf( "targetapp text\n" );
 
     while( 1 ) { }
     
